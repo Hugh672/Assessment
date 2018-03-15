@@ -1,0 +1,34 @@
+//ex15 people
+class Person{
+	private String name;
+	private int age;
+	private String jobTitle;
+	
+	
+	Person(String name, int age, String jobTitle){
+		this.name = name;
+		this.age = age;
+		this.jobTitle = jobTitle;
+		
+	}
+
+	public String toString(){
+		
+		return name + " " + age + " " + jobTitle;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public int getAge() {
+		return age;
+	}
+	
+	public String getJobTitle() {
+		return jobTitle;
+	}
+	
+	
+
+}
