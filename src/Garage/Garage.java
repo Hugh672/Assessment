@@ -25,19 +25,19 @@ public class Garage {
 			if(x instanceof Car) {
 				x = (Car) x;
 //				theGarage.remove(x);
-				tempList.add(x);
+//				tempList.add(x);
 			}
 		
 			if(x instanceof HoverCraft) {
 				x = (HoverCraft) x;
 //				theGarage.remove(x);
-				tempList.add(x);
+//				tempList.add(x);
 			}
 		}
 		
 		theGarage.removeAll(tempList);
 		
-		System.out.println(theGarage);
+	//	System.out.println(theGarage);
 		
 		
 	}

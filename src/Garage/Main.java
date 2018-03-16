@@ -5,11 +5,6 @@ public class Main {
 	public static void main(String[] args) {
 		Garage garage = new Garage();
 		garage.addVehicle(new Car());
-		garage.addVehicle(new Car());
-		garage.addVehicle(new Motorbike());
-		garage.addVehicle(new Motorbike());
-		garage.addVehicle(new Motorbike());
-		garage.addVehicle(new Motorbike());
 		garage.addVehicle(new Motorbike());
 		garage.addVehicle(new HoverCraft());
 		
