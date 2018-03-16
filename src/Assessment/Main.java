@@ -7,15 +7,19 @@ public class Main {
 
 	public static void main(String[] args) {
 	
+		Treasure treasure = new Treasure();
+		
+		System.out.println("Type Look");
+		
 		boolean gameActive = true; 
 		Scanner in = new Scanner(System.in);
         
-        int x = 0;
-        int y = 0;
+        int x = 5;   //starting location (centre of Grid)
+        int y = 5;   //starting location (centre of Grid)
       
         while (gameActive) {
-        	for (int i = 0; i < 10; i++) {
-        		for (int j = 0; j < 10; j++) {
+        	for (int i = 0; i < 11; i++) {
+        		for (int j = 0; j < 11; j++) {
         			if (i ==y & j ==x) {
         			 System.out.print("O");    //Characters Position
         			 
@@ -42,6 +46,10 @@ public class Main {
             		"Some black plants barely poke out of the shallow water.\r\n" + 
             		"\r\n" + 
             		"Try Exploring using \"North\",\"South\",\"East\" or \"West\"" + 
+            		"\r\n" + 
+            		"You notice a small watch-like device in your left hand. \n" + 
+            		"\r\n"
+    				+ "It has hands like a watch, but the hands don't seem to tell time, how mysterious.... perhaps there is treasure nearby?" + 
             		"\r\n");;
     }
         if (move.equals("North")) { 
@@ -57,24 +65,24 @@ public class Main {
     			x++;
         }
        
-       // if ((t.getTX()==x)) {
-        //	System.out.println("Found treasure!");
-        //	}
-
-        System.out.println("You notice a small watch-like device in your left hand. \n" + 
-        		"\r\n"
-				+ "It has hands like a watch, but the hands don't seem to tell time, how mysterious...." + 
-        		"\r\n");;
-      
-    }		
        
+		if ((treasure.getTX()==x)) { // && (treasure.getTY()==y)){
+        	System.out.println("Found treasure!");
+        	}
+
+    }		
+       // public static double Distance(Player p, Treasure t) {
+    	//	int x = p.getTX() - t.getTX();
+    		// int y = p.getTY() - t.getTY();
+    		
+    		// double distance = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
+    		
+    		// return distance;
        
         
 	}
 
-	//private static boolean getTY() {
-		// TODO Auto-generated method stub
-		//return false;
+	
 	}
 
 	
